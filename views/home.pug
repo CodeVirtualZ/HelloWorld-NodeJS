@@ -1,0 +1,22 @@
+extends layout/main-layout
+ 
+block content
+    style.
+        .test{
+            color:red;
+        }
+        .test2{
+
+        }
+
+    include components/button
+    .container 
+        h1.test KOMMY
+        +button2("กดดิวะ")
+        -for(let i =0;i<itemsss.length;i++)
+            ui 
+                li=itemsss[i].name
+        a(href="/test") KOMMY 
+
+    script.
+        console.log('sssssss')
